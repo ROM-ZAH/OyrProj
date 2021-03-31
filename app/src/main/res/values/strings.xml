@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TestAppE</string>
+    <string name="passrestore"><u>Забыли пароль?</u></string>
+    <string name="user_login">Личный кабинет заказчика</string>
+    <string name="op_login">Личный кабинет диспетчера</string>
+    <string name="img_discr">okulus</string>
+    <string name="log_in">Войти</string>
+    <string name="img">1</string>
+    <string name="mytickts"><b>Мои заявки</b></string>
+</resources>
