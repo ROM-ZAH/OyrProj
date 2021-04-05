@@ -5,29 +5,151 @@
     android:id="@+id/filters"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".mytickets_user">
 
-    <TextView
-        android:id="@+id/texttick"
-        android:layout_width="138dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="54dp"
-        android:text="@string/mytickts"
-        android:textColor="#000000"
-        android:textSize="19.6sp"
+    <FrameLayout
+        android:id="@+id/all_app"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
 
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="131dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="139dp"
-        android:layout_marginTop="107dp"
-        android:background="@drawable/blueellips"
-        android:spinnerMode="dialog"
+        <TextView
+            android:id="@+id/mytickts"
+            android:layout_width="138dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/mytickts"
+            android:textColor="#000000"
+            android:textSize="19.6sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/ProfileName"
+            android:layout_width="200dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/mytickts"
+            android:textColor="#000000"
+            android:textSize="19.6sp"
+            app:layout_constraintStart_toEndOf="@+id/mytickts"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="137dp"
+            android:layout_height="41dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="300dp"
+            android:background="@drawable/blueellips"
+            android:spinnerMode="dialog"
+            app:layout_constraintStart_toEndOf="@id/button"
+            app:layout_constraintTop_toBottomOf="@+id/ProfileName" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="36dp"
+            android:background="#4390a7"
+            android:text="Фильтры"
+            android:textColor="#4390a7"
+            app:backgroundTint="#ffffff"
+            app:layout_constraintEnd_toStartOf="@+id/spinner1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mytickts" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/checkbox1"
+        android:layout_width="262dp"
+        android:layout_height="278dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.461">
 
+        <CheckBox
+            android:id="@+id/enabled1"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:text="@string/wwww"
+            android:textSize="15sp"
+
+            app:layout_constraintBottom_toTopOf="@+id/enabled2"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <CheckBox
+            android:id="@+id/enabled8"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:text="@string/wwww"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/enabled2"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <CheckBox
+            android:id="@+id/enabled9"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="117dp"
+            android:layout_marginEnd="25dp"
+            android:layout_weight="1"
+            android:text="@string/wwww"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/enabled2"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <CheckBox
+            android:id="@+id/enabled10"
+            android:layout_width="210dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="167dp"
+            android:layout_marginEnd="25dp"
+
+            android:layout_weight="1"
+            android:text="@string/wwww"
+
+            android:textSize="15sp"
+            app:layout_constraintBottom_toTopOf="@+id/enabled2"
+            tools:ignore="MissingConstraints,UnknownId" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="140dp"
+            android:layout_marginTop="217dp"
+            android:layout_marginEnd="25dp"
+            android:backgroundTint="#4390a7"
+            android:text="Применить"
+            android:textSize="10dp" />
+
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

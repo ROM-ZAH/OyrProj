@@ -10,9 +10,6 @@ import java.util.regex.Pattern
 
 
 class log_in_op : AppCompatActivity() {
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in_op)
