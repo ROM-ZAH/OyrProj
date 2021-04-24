@@ -1,5 +1,6 @@
 package com.example.testappe
 
+import android.content.Intent
 import android.graphics.Color.blue
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -25,25 +26,24 @@ class mytickets_user : AppCompatActivity() {
         val client = OkHttpClient()
         val filtrOpen = findViewById<Button>(R.id.button)
         val filtrClose = findViewById<Button>(R.id.button2)
-
-        val request2 = GET(TOKEN)
-        Thread {
-            val res2 = client.newCall(request2).execute()
-            val jsonObject2 = JSONObject(res2.body?.string())
-            val user = jsonObject2.get("user")
-            val jsonObject3 = JSONObject(user.toString())
-            id = jsonObject3.get("id").toString()
-            surname = jsonObject3.get("surname").toString()
-            textView.text = "$surname $id"
-            Log.d("ok_http_test_in_mytick", user.toString())
-            filtrOpen.setOnClickListener() {
-                Showchekboks()
-            }
-            filtrClose.setOnClickListener() {
-                Closechekboks()
-            }
-        }.start()
-
+        val user = intent.extras?.get("json")
+        if (user == null) {
+            Log.d("error", "-")
+            return
+        }
+        Log.d("norm", "+")
+        val jsonObject3 = JSONObject(user.toString())
+        id = jsonObject3.get("id").toString()
+        surname = jsonObject3.get("surname").toString()
+        textView.text = "$surname $id"
+        Log.d("ok_http_test_in_mytick", user.toString())
+        filtrOpen.setOnClickListener() {
+            startActivity(Intent(this, gallery_and_dok::class.java))
+            //Showchekboks()
+        }
+        filtrClose.setOnClickListener() {
+            Closechekboks()
+        }
 
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         spinner.adapter = adapter

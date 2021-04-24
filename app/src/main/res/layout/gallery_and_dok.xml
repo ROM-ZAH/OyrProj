@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/doc"
+        android:layout_width="259dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#4390a7"
+        android:text="Документы"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.905"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="259dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="400dp"
+        android:backgroundTint="#4390a7"
+        android:text="Результаты мониторинга"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:layout_width="148dp"
+        android:layout_height="43dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/Strelka"
+            android:layout_width="17dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#fff"
+            android:text="&#10094;"
+            android:textColor="#b9c2c5"
+            android:textSize="22dp"
+            android:translationZ="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.037"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/back_to_zayvki"
+            android:layout_width="130dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="1dp"
+            android:backgroundTint="#fff"
+            android:paddingStart="40dp"
+            android:paddingEnd="25dp"
+            android:text="Заявки"
+            android:textColor="#b9c2c5"
+            android:translationZ="1dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="80dp" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

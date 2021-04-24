@@ -54,7 +54,15 @@ class log_in_user : AppCompatActivity() {
                         TOKEN = jsonObject.get("token").toString()
                         Log.d("ok_http_test", code)
                         if (status == "success") {
-                            startActivity(Intent(this, mytickets_user::class.java))
+                            val newIntent = Intent(this, mytickets_user::class.java)
+
+                            val request2 = GET(TOKEN)
+
+                            val res2 = client.newCall(request2).execute()
+                            val jsonObject2 = JSONObject(res2.body?.string())
+                            val user = jsonObject2.get("user").toString()
+                            newIntent.putExtra("json", user)
+                            startActivity(newIntent)
                         }
                     }
                    // Log.d("ok_http_test", "${res1.code.toString()}, ${res1.toString()},${res1.body?.string()}")

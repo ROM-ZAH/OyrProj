@@ -1,7 +1,5 @@
 package com.example.testappe
 
-import android.view.View
-import android.widget.ProgressBar
 import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request

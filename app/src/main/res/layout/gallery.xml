@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:backgroundTint="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        android:translationZ="100dp">
+
+
+        <FrameLayout
+            android:id="@+id/dffg"
+            android:layout_width="133dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/Strelka"
+                android:layout_width="17dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:backgroundTint="#fff"
+                android:text="&#10094;"
+                android:textColor="#b9c2c5"
+                android:textSize="22dp"
+                android:translationZ="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.037"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/back_to_zayvki"
+                android:layout_width="130dp"
+                android:layout_height="43dp"
+                android:layout_marginStart="1dp"
+                android:backgroundTint="#fff"
+                android:text="Заявки"
+                android:textColor="#b9c2c5"
+                android:translationZ="1dp"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="80dp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="25dp"
+            android:text="Галлерея"
+            android:textColor="#4390a7"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="104dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="90dp"
+            android:background="#ffffff"
+            android:src="@drawable/a1"
+            android:translationZ="2dp" />
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="104dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:src="@drawable/a1"
+            android:translationZ="2dp" />
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="104dp"
+            android:layout_height="67dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="20dp"
+            android:background="#ffffff"
+            android:src="@drawable/a1"
+            android:translationZ="2dp" />
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="156dp"
+            android:text="Название"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="156dp"
+            android:text="Название"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="156dp"
+            android:text="Название"
+            android:textColor="#aaaaaa"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.816"
+            app:layout_constraintStart_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
+        app:layout_constraintTop_toTopOf="@+id/frameLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:backgroundTint="#fff"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/icon4"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+
+            <ImageView
+                android:id="@+id/icon5"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="30dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon6"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="220dp"
+                android:layout_marginEnd="20dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon7"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="220dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon8"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="410dp"
+                android:layout_marginEnd="20dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon9"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="410dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon10"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="600dp"
+                android:layout_marginEnd="20dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+            <ImageView
+                android:id="@+id/icon11"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="220dp"
+                android:layout_marginTop="600dp"
+                android:background="#ffffff"
+                android:src="@drawable/a2"
+                android:translationZ="2dp" />
+        </FrameLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
